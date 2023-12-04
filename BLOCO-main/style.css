@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'raleway';
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url(Raleway-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: #F4F4F4;
+    color: #333; /* Cor do texto principal */
+}
+
+header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.textarea-nota {
+    border-radius: 8px;
+    padding: 10px;
+    border: 2px solid #3498DB; /* Cor da borda destacada */
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+textarea {
+    border: 2px solid #3498DB;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.dividir {
+    padding: 16px 20px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'raleway';
+    font-weight: 700;
+    font-size: 18px;
+    color: #E74C3C; /* Cor destacada */
+}
+
+#limpar-notas,
+#adicionar-nota {
+    background-color: #27AE60; /* Cor de destaque */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#limpar-notas:hover,
+#adicionar-nota:hover {
+    background-color: #1E8449; /* Cor de destaque ao passar o mouse */
+}
+
+.parte1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px 20px;
+}
+
+.h1I {
+    display: flex;
+    align-items: center;
+    color: #3498DB; /* Cor de destaque */
+}
+
+.h1I h1 {
+    font-family: 'raleway';
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+#notas-salvas {
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.nota {
+    border: 2px solid #3498DB;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.nota input {
+    background-color: transparent;
+    width: 25px;
+    height: 28px;
+}
+
+.nota textarea {
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.nota button {
+    background-color: #E74C3C;
+    color: white;
+    width: 25px;
+    height: 28px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nota button:hover {
+    background-color: #C0392B; /* Cor de destaque ao passar o mouse */
+}
+
+.nota p {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+ol {
+    color: #333;
+    text-align: left;
+    display: grid;
+    justify-content: center;
+}
+
+li {
+    padding: 10px 0;
+}
+
+li span {
+    font-weight: 700;
+    font-size: 18px;
+    color: #3498DB; /* Cor de destaque */
+}
+
+footer {
+    display: flex;
+    height: 53px;
+    background-color: #34495E;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
